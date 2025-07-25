@@ -67,13 +67,14 @@
         text-shadow: 2px 2px 2px black;
         margin: auto;
       }
-      .start-btn{
+      .default-btn{
         margin-top: 3rem;
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
          border-radius: 1rem;
          border: none;
          width: 10rem;
+         box-sizing: border-box;
       }
     </style>
   </head>
@@ -81,9 +82,13 @@
     <section id="result" class="hide">
       <div class="container">
         <h1>'x' is winner!</h1>
-        <button class="start-btn" id="start">start</button>
+        <button class="default-btn" id="start">start</button>
       </div>
     </section>
+    <div class="vsplayerOrvscomp">
+      <button class="default-btn" id="vsPlayer">vs player</button>
+      <button class="default-btn" id="vsComputer">vs computer</button>
+    </div>
     <section id="game">
       <div class="game-container">
         <h1>tic-tac-toe</h1>
@@ -99,7 +104,7 @@
             <button class="btn"></button>
             <button class="btn"></button>
           </div>
-          <button class="start-btn" id="restart">restart</button>
+          <button class="default-btn" id="restart">restart</button>
         </div>
       </div>
     </section>
