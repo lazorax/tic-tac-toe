@@ -56,9 +56,10 @@ class Game {
     if (btn.innerText === "") {
       btn.innerText = turn;
       btn.disabled = true;
-    } else {
-      alert("box is not empty");
-    }
+    } 
+    // else {
+    //   alert("box is not empty");
+    // }
   }
 }
 
