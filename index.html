@@ -3,95 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>tic-tac-toe</title>
-    <style>
-      /*--mindaro: #d8f793ff;
---pistachio: #a0ca92ff;
---cambridge-blue: #75b09cff;
---lion: #998650ff;
---old-gold: #e0be36ff;*/
-      * {
-        padding: 0;
-        margin: 0;
-        font-family: "Courier New", Courier, monospace;
-      }
-      .container {
-        height: 60%;
-        text-align: center;
-        margin: auto ;
-        height: 100vh;
-        border: 1px solid black;
-      }
-      #result {
-        background-color: #d8f793ff;
-      }
-       .hide
-       { display: none;}
-      #game {
-        background-color: #a0ca92ff;
-      }
-      #game h1{
-        margin-bottom: 5rem;
-      }
-      h1 {
-        color: #e0be36ff;
-        text-shadow: 3px 2px black;
-        font-size: 4rem;
-      }
-      .game-container{
-        height: 100vh;
-        text-align: center;
-      }
-      #game-wrapper{
-         width:50vw ;
-        margin: auto auto ;
-         height: 60vh;
-        }
-        #game-board{
-            
-            display: grid;
-            grid:1fr 1fr 1fr/1fr 1fr 1fr;
-            height: 100%;
-            width: 100%;
-            gap: 2rem;
-            margin: auto;
-      }
-      .btn{
-        width: 10rem;
-        height: 8rem;
-        font-size: 6rem;
-        border-radius: 1rem;
-        border: none;
-        background-color: #998650ff;
-        color: #75b09cff;
-        text-shadow: 2px 2px 2px black;
-        margin: auto;
-      }
-      .default-btn{
-        margin-top: 3rem;
-        padding: 1rem;
-        font-size: 1.5rem;
-         border-radius: 1rem;
-         border: none;
-         width: 10rem;
-         box-sizing: border-box;
-      }
-    </style>
   </head>
   <body>
-    <section id="result" class="hide">
-      <div class="container">
-        <h1>'x' is winner!</h1>
-        <button class="default-btn" id="start">start</button>
-      </div>
-    </section>
-    <div class="vsplayerOrvscomp">
-      <button class="default-btn" id="vsPlayer">vs player</button>
-      <button class="default-btn" id="vsComputer">vs computer</button>
-    </div>
+ 
+   
     <section id="game">
-      <div class="game-container">
-        <h1>tic-tac-toe</h1>
+      <div id="vsplayerOrvscomp" class="model ">
+        <button class="default-btn" id="vsPlayer">vs player</button>
+        <button class="default-btn" id="vsComputer">vs computer</button>
+      </div>
+
+      <div class="game-container blur">
+        <h1 class="yellow-font">tic-tac-toe</h1>
         <div id="game-wrapper">
           <div id="game-board">
             <button class="btn"></button>
@@ -107,6 +32,12 @@
           <button class="default-btn" id="restart">restart</button>
         </div>
       </div>
+
+      <div id="result" class="model hide">
+        <h1 id="resultMessage" class="yellow-font"></h1>
+        <button class="default-btn" id="start">start</button>
+    </div>
+
     </section>
     <script src="index.js"></script>
   </body>
