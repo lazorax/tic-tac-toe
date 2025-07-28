@@ -194,9 +194,9 @@ class vsComp extends Game {
         }
       }
     }
-    if (bestMove) {
-      this.updateMove(this.btns[bestMove], this.bot);
-    }
+    if (bestMove !== null && bestMove !== undefined) {
+  this.updateMove(this.btns[bestMove], this.bot);
+}
     return;
   }
 
